@@ -10,7 +10,7 @@ namespace MyGame
 
         override void Compute()
         {
-            output[float2(0,0)] = float4(1,1,1,1);
+            output[streams.GroupId.xy] = float4(1,1,1,1);
         }
     };
 }
