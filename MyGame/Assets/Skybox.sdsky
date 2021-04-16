@@ -1,0 +1,5 @@
+!SkyboxAsset
+Id: e1cf046e-955b-49aa-a4ef-ae313f011346
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+CubeMap: e1ed3449-4482-4584-8ad8-b8e2072620fd:Skybox texture

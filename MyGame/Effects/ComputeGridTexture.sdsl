@@ -1,0 +1,17 @@
+// Copyright (c) Stride contributors (https://stride3d.net) and Silicon Studio Corp. (https://www.siliconstudio.co.jp)
+// Distributed under the MIT license. See the LICENSE.md file in the project root for more information.
+
+namespace MyGame
+{
+    shader ComputeGridTexture : ComputeShaderBase
+    {    
+        stage Texture2D<float4> input;
+        stage RWTexture2D<float4> output;
+
+        override void Compute()
+        {
+            float4 Sum = float4(0,0,0,0);
+            output[streams.GroupId.xy] = float4(1,1,1,1);
+        }
+    };
+}

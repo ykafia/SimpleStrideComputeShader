@@ -1,0 +1,10 @@
+﻿namespace MyGame
+{
+    
+    effect ComputeGridTextureEffect
+    {
+        //using params ComputeGridTexture;
+
+        mixin ComputeGridTexture;
+    };
+}
