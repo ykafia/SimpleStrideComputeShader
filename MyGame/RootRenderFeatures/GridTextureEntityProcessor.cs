@@ -34,7 +34,11 @@ namespace MyGame.RootRenderFeatures
         /// <inheritdoc />
         protected override GridTextureObject GenerateComponentData(Entity entity, GridTextureComponent component)
         {
-            return new GridTextureObject();
+            return new GridTextureObject() 
+            {
+                inputTexture = component.InputTexture,
+                outputTexture = component.OutputTexture
+            };
         }
 
         
@@ -53,7 +57,8 @@ namespace MyGame.RootRenderFeatures
                 if (myEntityComponent.Enabled)
                 {
                     // Select the first enabled component and assign data from UI
-                    
+
+                    myEntityComponent.OutputTexture = myRenderObject.outputTexture;
                     MyRenderObject = myRenderObject;
                     break;
                 }
